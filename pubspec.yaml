@@ -33,8 +33,6 @@ dependencies:
   get: any
   # For API operations
   http: any
-  # For Local Database
-  sqflite: any
   # geolocator: any
   # For Icons
   cupertino_icons: any
@@ -42,24 +40,6 @@ dependencies:
   get_storage: any
   # For Font Family and Fonts
   google_fonts : any
-  # Permission_handler
-  # permission_handler: any
-  # Connectivity Cheker
-  connectivity: any
-  # For_lottie_files
-  lottie: any
-  # For bouncing widgets
-  flutter_bounce: any
-  # [Bellow dependencies are for quiblah]
-  sensors: any
-  flare_flutter: ^3.0.2
-  flutter_compass: '^0.7.0'
-  location: ^4.3.0
-  firebase_messaging: ^10.0.8
-  firebase_core: ^1.7.0
-  flutter_local_notifications: any
-  notification_permissions: any
-  awesome_notifications: any
   flutter_native_splash:
   
 
