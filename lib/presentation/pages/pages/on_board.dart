@@ -30,14 +30,19 @@ class _OnboardingState extends State<Onboarding> {
         child: Scaffold(
           body: Stack(
             children: [
-              PageView.builder(
-                controller: _pageController,
-                itemCount: 3,
-                onPageChanged: (v) {
-                  _currentPageNotifier.value = v;
-                },
-                itemBuilder: (ctx, index) =>
-                    OnBoardingPageMaterial(imgaePath: _imageList[index]),
+              Center(
+                child: SizedBox(
+                  height: 500,
+                  child: PageView.builder(
+                    controller: _pageController,
+                    itemCount: 3,
+                    onPageChanged: (v) {
+                      _currentPageNotifier.value = v;
+                    },
+                    itemBuilder: (ctx, index) =>
+                        OnBoardingPageMaterial(imgaePath: _imageList[index]),
+                  ),
+                ),
               ),
               Container(
                 alignment: Alignment.bottomCenter,
