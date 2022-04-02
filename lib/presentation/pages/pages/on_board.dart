@@ -7,7 +7,7 @@ import 'package:getx_tasks/presentation/controller/is_user_new/is_user_new.dart'
 import 'package:getx_tasks/presentation/pages/pages/landing_page.dart';
 
 class Onboarding extends StatefulWidget {
-  Onboarding({Key? key}) : super(key: key);
+  const Onboarding({Key? key}) : super(key: key);
 
   @override
   State<Onboarding> createState() => _OnboardingState();
@@ -53,7 +53,7 @@ class _OnboardingState extends State<Onboarding> {
                     InkWell(
                       onTap: () {
                         _controller.makeUserOld();
-                        Get.offAll(() => LandingPage());
+                        Get.offAll(() => const LandingPage());
                       },
                       child: Container(
                         decoration: BoxDecoration(
@@ -94,7 +94,7 @@ class _OnboardingState extends State<Onboarding> {
                       onTap: () => _currentPageNotifier.value == 2
                           ? () {
                               _controller.makeUserOld();
-                              Get.offAll(() => LandingPage());
+                              Get.offAll(() => const LandingPage());
                             }()
                           : _pageController
                               .jumpToPage(_currentPageNotifier.value + 1),
